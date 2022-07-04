@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div id="starter">
+
+        <h1>Quiz App</h1>
+        <button class="btn" onclick="StartQuiz()">Start</button>
+        <button class="btn" onclick="ExitQuiz()">Exit</button>
+
+    </div>
+
+    <div id="container">
+
+        <div class="que-container">
+
+
+            <div class="que">
+                <span id="question"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eos ratione neque
+                    reiciendis soluta dignissimos repellendus expedita debitis hic mollitia tempore molestiae sunt
+                    dolorum laudantium, distinctio laborum amet suscipit nostrum. </span>
+            </div>
+            <div class="options">
+
+                <div>
+                    <input type="radio" class="answers" name="option" id="ans1" required>
+                    <label for="ans1" id="op1"> Option 1 </label>
+                </div>
+
+                <div>
+                    <input type="radio" class="answers" name="option" id="ans2" required>
+                    <label for="ans2" id="op2"> Option 2 </label>
+                </div>
+
+                <div>
+                    <input type="radio" class="answers" name="option" id="ans3" required>
+                    <label for="ans3" id="op3"> Option 3 </label>
+                </div>
+
+                <div>
+                    <input type="radio" class="answers" name="option" id="ans4" required>
+                    <label for="ans4" id="op4"> Option 4 </label>
+                </div>
+            </div>
+
+            <div class="navigate">
+
+                <button id="Submit" type="submit" onclick="Submit()">Next </button>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div id="score">
+        <h2>Your Score</h2>
+        <div>
+            <span id="gotMarks"> </span>
+            <span id="TotalMarks"></span>
+        </div>
+        <span id="comment"></span>
+    </div>
+
+</body>
+
+<script src="JS/script.js"></script>
+
+</html>
